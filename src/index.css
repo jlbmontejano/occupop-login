@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply text-center
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply w-screen h-screen
+  }
+}
+
+@layer utilities {
+  a:hover {
+    @apply underline
+  }
+}
