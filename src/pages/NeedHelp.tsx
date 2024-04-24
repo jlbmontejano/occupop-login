@@ -1,8 +1,9 @@
-import React from "react";
 import { faqQuestions } from "../constants";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const NeedHelp = () => {
+	const navigate = useNavigate();
+
 	return (
 		<div className='page-container flex flex-col'>
 			<div className='flex bg-teal-300 h-1/5 items-center justify-center w-full'>
@@ -20,11 +21,9 @@ const NeedHelp = () => {
 				</ol>
 			</div>
 			<div>
-				<Link to='/'>
-					<button type='submit' className='bg-teal-300 hover:bg-teal-500 hover:text-white rounded w-1/4 items-self-center p-3'>
-						Go Back
-					</button>
-				</Link>
+				<button onClick={() => navigate(-1)} type='submit' className='bg-teal-300 hover:bg-teal-500 hover:text-white rounded w-1/4 items-self-center p-3'>
+					Go Back
+				</button>
 			</div>
 		</div>
 	);

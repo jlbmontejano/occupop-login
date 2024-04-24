@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
 const LogIn = () => {
+	// I would do a mobile first approach, but since the photo I was sent was a desktop version, I did it that way.
+
+	// I would also make classes to improve className readibility, i.e. a class for 'flex flex-col gap-6'
+	
 	return (
 		<div className='page-container bg-gradient-to-r from-40% from-teal-300 to-40% to-white flex justify-center items-center'>
 			<div className='w-3/4 h-3/4 flex shadow-xl  to-white'>
